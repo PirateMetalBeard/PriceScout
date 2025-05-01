@@ -28,6 +28,8 @@ export default function App() {
     }
   }
 
+  const styles = createStyles(theme, colorScheme);
+
   if (!permission) {
     // Camera permissions are still loading.
     return <View />;
@@ -43,8 +45,6 @@ export default function App() {
       </View>
     );
   }
-  
-  const styles = createStyles(theme, colorScheme);
 
   return (
     <SafeAreaView style={styles.wrapper}>
@@ -60,9 +60,6 @@ export default function App() {
         <Text style={styles.text}>ID: {barcodeData}</Text>
       </View>
     </SafeAreaView>
-    
-    
-    
   );
 }
 

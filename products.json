@@ -1,0 +1,74 @@
+[
+  {
+    "name": "nadec MILK 1L",
+    "barcode": "6281057010011",
+    "pandaPrice": 6.4,
+    "ninjaPrice": 5.5,
+    "pandaUrl": "https://panda.sa/en/p/16461",
+    "ninjaUrl": "https://ananinja.com/sa/en/product/almarai-fresh-milk-full-fat-2-l-1-7518"
+  },
+  {
+    "name": "Almarai Analogue Spreadable Cream Cheese 500 gm",
+    "barcode": "6281007043359",
+    "pandaPrice": 20.50,
+    "ninjaPrice": 19.95,
+    "pandaUrl": "https://panda.sa/en/p/22767",
+    "ninjaUrl": "https://ananinja.com/sa/en/product/almarai-analogue-spreadable-cream-cheese-500-gm-1-12707576"
+  },
+  {
+    "name": "Nescafe 3 In 1 Classic",
+    "barcode": "6294003562083",
+    "pandaPrice": 46.95,
+    "ninjaPrice": 46.95,
+    "pandaUrl": "https://panda.sa/en/p/24613",
+    "ninjaUrl": "https://ananinja.com/sa/en/product/nescafe-3in1-classic-30-pcs-20-gm-1-19351831"
+  },
+  {
+    "name": "Alyoum Chicken Breast Fillet 450 gm",
+    "barcode": "6281007056717",
+    "pandaPrice": 23.87,
+    "ninjaPrice": 22.95,
+    "pandaUrl": "https://panda.sa/en/p/24613",
+    "ninjaUrl": "https://ananinja.com/sa/en/product/nescafe-3in1-classic-30-pcs-20-gm-1-19351831"
+  },
+  {
+    "name": "ABUKASS SELLA BASMATI RICE 5KG",
+    "barcode": "6281100411109",
+    "pandaPrice": 48.25,
+    "ninjaPrice": 47.95,
+    "pandaUrl": "https://panda.sa/en/p/18071",
+    "ninjaUrl": "https://ananinja.com/sa/en/product/abu-kass-indian-sella-basmati-rice-5-kg-1-8106"
+  },
+  {
+    "name": "LIPTON YELLOW LABEL 100TBGS",
+    "barcode": "6221048700705",
+    "pandaPrice": 14.95,
+    "ninjaPrice": 15.00,
+    "pandaUrl": "https://panda.sa/en/p/20935",
+    "ninjaUrl": "https://ananinja.com/sa/en/product/lipton-yellow-label-black-tea-100-bags-1-19288661"
+  },
+  {
+    "name": "Goody Pasta Spaghetti 450 gm",
+    "barcode": "6281014001052",
+    "pandaPrice": 5.95,
+    "ninjaPrice": 5.75,
+    "pandaUrl": "https://panda.sa/en/p/15941",
+    "ninjaUrl": "https://ananinja.com/sa/en/product/lipton-yellow-label-black-tea-100-bags-1-19288661"
+  },
+  {
+    "name": "Yaumi White Fresh Tortilla 240 gm",
+    "barcode": "6281100362807",
+    "pandaPrice": 7.95,
+    "ninjaPrice": 7.95,
+    "pandaUrl": "https://panda.sa/en/p/45835",
+    "ninjaUrl": "https://ananinja.com/sa/en/product/yaumi-white-fresh-tortilla-240-gm-1-5130184"
+  },
+  {
+    "name": "Berain Water 40 x 330ml",
+    "barcode": "6281101220755",
+    "pandaPrice": 18.95,
+    "ninjaPrice": 21.25,
+    "pandaUrl": "https://panda.sa/en/p/24096",
+    "ninjaUrl": "https://ananinja.com/sa/en/product/berain-water-40-x-330ml--1-1007733"
+  }
+  ]
