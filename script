@@ -1,0 +1,4 @@
+npm install react@18.3.1 react-dom@18.3.1
+npm install --legacy-peer-deps
+npm install --force
+npm install react-test-renderer@latest
