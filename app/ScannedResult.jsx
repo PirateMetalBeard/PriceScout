@@ -1,5 +1,3 @@
-import { initializeApp } from 'firebase/app';
-import { getFirestore } from 'firebase/firestore';
 import { Text, View, SafeAreaView, StyleSheet, TextInput, Pressable, Image } from 'react-native';
 import { ThemeContext } from '@/context/ThemeContext';
 import { useContext, useEffect, useState } from 'react';
