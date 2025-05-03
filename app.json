@@ -9,14 +9,18 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "runtimeVersion": {
+        "policy": "appVersion"
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.anonymous.PriceScout"
+      "package": "com.anonymous.PriceScout",
+      "runtimeVersion": "1.0.0"
     },
     "web": {
       "bundler": "metro",
@@ -47,6 +51,9 @@
       "eas": {
         "projectId": "e11a6137-faf4-4bd4-abc0-b1dffe633216"
       }
+    },
+    "updates": {
+      "url": "https://u.expo.dev/e11a6137-faf4-4bd4-abc0-b1dffe633216"
     }
   }
 }

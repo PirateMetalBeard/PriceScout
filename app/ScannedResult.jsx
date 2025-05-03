@@ -3,9 +3,10 @@ import { ThemeContext } from '@/context/ThemeContext';
 import { useContext, useEffect, useState } from 'react';
 import { router, useLocalSearchParams } from 'expo-router';
 import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
-import products from '@/products.json';
+import allComparisons from '@/all_comparisons.json'; // Import all_comparisons.json
 import pandaIcon from '@/pandaIcon.png';
-import ninjaIcon from '@/ninjaIcon.png'; // Import the ninja icon
+import ninjaIcon from '@/ninjaIcon.png';
+import carfourIcon from '@/carfourIcon.png'; // Import the Carrefour icon
 
 export default function ScannedResult() {
     const params = useLocalSearchParams();
@@ -14,7 +15,7 @@ export default function ScannedResult() {
 
     useEffect(() => {
         if (params.barcode) {
-            const foundProduct = products.find(p => p.barcode === params.barcode);
+            const foundProduct = allComparisons.find(p => p.barcode === params.barcode);
             setProduct(foundProduct);
         }
     }, [params.barcode]);
@@ -43,20 +44,33 @@ export default function ScannedResult() {
             <View style={styles.resultContainer}>
                 {product ? (
                     <>
-                        <Text style={styles.productName}>{product.name}</Text>
+                        <Text style={styles.productName}>{product.product}</Text>
                         <View style={styles.priceContainer}>
                             <Image
                                 source={pandaIcon}
                                 style={styles.icon}
                             />
-                            <Text style={styles.priceText}>{product.pandaPrice} ريال</Text>
+                            <Text style={styles.priceText}>
+                                {product.panda?.price ? `${product.panda.price} ريال` : "N/A"}
+                            </Text>
                         </View>
                         <View style={styles.priceContainer}>
                             <Image
-                                source={ninjaIcon} // Use the ninja icon here
+                                source={ninjaIcon}
                                 style={styles.icon}
                             />
-                            <Text style={styles.priceText}>{product.ninjaPrice} ريال</Text>
+                            <Text style={styles.priceText}>
+                                {product.ninja?.price ? `${product.ninja.price} ريال` : "N/A"}
+                            </Text>
+                        </View>
+                        <View style={styles.priceContainer}>
+                            <Image
+                                source={carfourIcon} // Use the Carrefour icon here
+                                style={styles.icon}
+                            />
+                            <Text style={styles.priceText}>
+                                {product.carfor?.price ? `${product.carfor.price} ريال` : "N/A"}
+                            </Text>
                         </View>
                     </>
                 ) : (
@@ -74,7 +88,7 @@ function createStyles(theme, colorScheme) {
         container: {
             flex: 1,
             width: '100%',
-            backgroundColor: theme.background || '#1E1E1E', // Dark theme background
+            backgroundColor: theme.background || '#1E1E1E',
             padding: 16,
         },
         inputContainer: {
